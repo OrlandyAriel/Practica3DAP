@@ -1,18 +1,18 @@
-package ull.patrones.calculadora.principal;
+package ull.patrones.calculadora.iu;
 
+import java.awt.Button;
 import java.util.ArrayList;
 
-import javax.swing.JButton;
+import javax.swing.BoxLayout;
 import javax.swing.JPanel;
 
-import ull.patrones.calculadora.opeciones.Division;
-import ull.patrones.calculadora.opeciones.IOperacion;
+import ull.patrones.calculadora.opeciones.representacion.DivisionButton;
 
 public class PanelOperaciones extends JPanel
 {
 	private static final long serialVersionUID = 1L;
 	
-	private ArrayList<IOperacion> m_operaciones;
+	private ArrayList<Button> m_operaciones;
 	public PanelOperaciones()
 	{
 		initComponent();
@@ -21,9 +21,11 @@ public class PanelOperaciones extends JPanel
 	{
 		operacioens();
 		configuracionPanel();
-		for (int i = 0; i < m_operaciones.size(); i++)
+		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		setVisible(true);
+		for (int i = 0; i < 5; i++)
 		{
-			
+			add(new DivisionButton());
 		}
 	}
 	private void configuracionPanel()
@@ -33,7 +35,7 @@ public class PanelOperaciones extends JPanel
 	private void operacioens()
 	{
 		m_operaciones = new ArrayList<>();
-		m_operaciones.add(new Division());
+		//m_operaciones.add(new Division());
 	}
 
 }
