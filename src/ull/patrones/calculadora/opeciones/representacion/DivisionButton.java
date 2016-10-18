@@ -1,9 +1,6 @@
 package ull.patrones.calculadora.opeciones.representacion;
 
-import java.awt.Insets;
-
-import javax.swing.JButton;
-
+@SuppressWarnings("serial")
 public class DivisionButton extends Boton
 {
 	private final static String m_simbolo = "/";

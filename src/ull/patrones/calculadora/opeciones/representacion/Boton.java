@@ -4,6 +4,7 @@ import java.awt.Insets;
 
 import javax.swing.JButton;
 
+@SuppressWarnings("serial")
 public class Boton extends JButton
 {
 	private String m_sim;
@@ -16,7 +17,7 @@ public class Boton extends JButton
 	private void initComponent()
 	{	
 		setVisible(true);
-		setMargin(new Insets(15, 15,15, 15));
+		setMargin(new Insets(1, 1, 1, 1));
 	}
 	public String getSimbolo()
 	{

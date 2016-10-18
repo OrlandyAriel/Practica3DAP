@@ -1,7 +1,6 @@
 package ull.patrones.calculadora.opeciones.representacion;
 
-import javax.swing.JButton;
-
+@SuppressWarnings("serial")
 public class MultiplicacionButton extends Boton
 {
 	private final static String m_simbolo = "x";

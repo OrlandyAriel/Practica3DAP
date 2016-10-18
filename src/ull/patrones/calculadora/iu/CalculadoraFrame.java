@@ -6,9 +6,6 @@ import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-
-import ull.patrones.calculadora.opeciones.representacion.DivisionButton;
 
 public class CalculadoraFrame 
 {
@@ -35,7 +32,7 @@ public class CalculadoraFrame
 		m_ventana.setLocationRelativeTo(null);
 		
 		m_ventana.getContentPane().add(m_display, BorderLayout.NORTH);
-		m_ventana.getContentPane().add(new PanelBotones(), BorderLayout.CENTER);
+		m_ventana.getContentPane().add(new PanelBotones(),BorderLayout.SOUTH);
 		
 	}
 	
