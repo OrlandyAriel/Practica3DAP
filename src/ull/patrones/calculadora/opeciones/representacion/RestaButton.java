@@ -7,7 +7,6 @@ public class RestaButton extends Boton
 	public RestaButton()
 	{
 		super(m_simbolo);
-		setToolTipText(m_simbolo);
 		setVisible(true);
 	}
 

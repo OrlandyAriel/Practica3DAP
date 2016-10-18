@@ -1,8 +1,11 @@
 package ull.patrones.calculadora.opeciones.representacion;
 
+import java.awt.Color;
 import java.awt.Insets;
-
 import javax.swing.JButton;
+
+import ull.patrones.calculadora.iu.EventoBoton;
+
 
 @SuppressWarnings("serial")
 public class Boton extends JButton
@@ -17,11 +20,12 @@ public class Boton extends JButton
 	private void initComponent()
 	{	
 		setVisible(true);
-		setMargin(new Insets(1, 1, 1, 1));
+		setBackground(Color.WHITE);;
+		setMargin(new Insets(5, 5, 5, 5));
+		this.addActionListener(new EventoBoton(m_sim));
 	}
 	public String getSimbolo()
 	{
 		return m_sim;
 	}
-	
 }

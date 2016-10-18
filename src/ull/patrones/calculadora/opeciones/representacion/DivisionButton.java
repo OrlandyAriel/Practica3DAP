@@ -1,5 +1,8 @@
 package ull.patrones.calculadora.opeciones.representacion;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 @SuppressWarnings("serial")
 public class DivisionButton extends Boton
 {
@@ -7,7 +10,19 @@ public class DivisionButton extends Boton
 	public DivisionButton()
 	{
 		super(m_simbolo);
-		setToolTipText(m_simbolo);
 		setVisible(true);
+		evento();
+	}
+	private void evento()
+	{
+		this.addActionListener(new ActionListener()
+		{
+			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				
+			}
+		});
 	}
 }

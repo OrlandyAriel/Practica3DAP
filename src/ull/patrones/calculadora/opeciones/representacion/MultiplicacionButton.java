@@ -7,7 +7,6 @@ public class MultiplicacionButton extends Boton
 	public MultiplicacionButton()
 	{
 		super(m_simbolo);
-		setToolTipText(m_simbolo);
 		setVisible(true);
 	}
 }

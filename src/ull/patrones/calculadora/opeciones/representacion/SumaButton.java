@@ -8,7 +8,6 @@ public class SumaButton extends Boton
 	public SumaButton()
 	{
 		super(m_simbolo);
-		setToolTipText(m_simbolo);
 		setVisible(true);
 	}
 }
