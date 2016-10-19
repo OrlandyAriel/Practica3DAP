@@ -1,6 +1,9 @@
 package ull.patrones.calculadora.iu;
 
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
@@ -25,15 +28,23 @@ public class GridBotones extends JPanel
 		{
 			for (int j = 0; j < 3; j++)
 			{
-				addBoton(i,j, new Boton(t_count+""));
+				Boton aux = new Boton(t_count+"");
+				aux.addActionListener(new ActionListener()
+				{
+					@Override
+					public void actionPerformed(ActionEvent e)
+					{
+					}
+				});
+				addBoton(i,j, aux);
 				t_count++;
 			}
 		}
 		addBoton(3,0, new Boton("."));
 		addBoton(3,1, new Boton("0"));
-		addBoton(3,2,new Boton("="));
-		
+		addBoton(3,2, new Boton("="));
 	}
+	
 	public void addBoton(int x, int y, Boton a_boton)
 	{
 		m_ArrayBoton[x][y] = a_boton;

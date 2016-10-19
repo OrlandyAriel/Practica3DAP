@@ -13,6 +13,6 @@ public class MainPrac
 		a = new Contexto(new Resta());
 		System.out.println(a.ejecutarEstrategia(-4, 2));
 		a = new Contexto(new Multiplicacion());
-		System.out.println(a.ejecutarEstrategia(2, 6));
+		System.out.println(a.ejecutarEstrategia(.3, 6));
 	}
 }

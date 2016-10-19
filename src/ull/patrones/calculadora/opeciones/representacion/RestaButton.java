@@ -9,5 +9,5 @@ public class RestaButton extends Boton
 		super(m_simbolo);
 		setVisible(true);
 	}
-
+	
 }
