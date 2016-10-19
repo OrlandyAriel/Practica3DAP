@@ -10,10 +10,11 @@ public class EventoBoton implements ActionListener
 	{
 		m_simbolo = a_simbolo;
 	}
-
 	@Override
 	public void actionPerformed(ActionEvent e)
 	{
-		CalculadoraFrame.setPantalla(m_simbolo);
+		// TODO Auto-generated method stub
+		
 	}
+
 }

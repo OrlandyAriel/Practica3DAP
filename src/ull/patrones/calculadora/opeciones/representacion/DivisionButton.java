@@ -11,18 +11,6 @@ public class DivisionButton extends Boton
 	{
 		super(m_simbolo);
 		setVisible(true);
-		evento();
 	}
-	private void evento()
-	{
-		this.addActionListener(new ActionListener()
-		{
-			
-			@Override
-			public void actionPerformed(ActionEvent e)
-			{
-				
-			}
-		});
-	}
+
 }

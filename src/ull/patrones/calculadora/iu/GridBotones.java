@@ -5,10 +5,6 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import ull.patrones.calculadora.opeciones.representacion.Boton;
-import ull.patrones.calculadora.opeciones.representacion.DivisionButton;
-import ull.patrones.calculadora.opeciones.representacion.MultiplicacionButton;
-import ull.patrones.calculadora.opeciones.representacion.RestaButton;
-import ull.patrones.calculadora.opeciones.representacion.SumaButton;
 
 public class GridBotones extends JPanel
 {
@@ -29,18 +25,18 @@ public class GridBotones extends JPanel
 		{
 			for (int j = 0; j < 3; j++)
 			{
-				m_ArrayBoton[i][j] = new Boton(t_count+"");
+				addBoton(i,j, new Boton(t_count+""));
 				t_count++;
 			}
 		}
-		m_ArrayBoton[0][3] = new DivisionButton();
-		m_ArrayBoton[1][3] = new MultiplicacionButton();
-		m_ArrayBoton[2][3] = new SumaButton();
-		m_ArrayBoton[3][3] = new RestaButton();
-		m_ArrayBoton[3][0] = new Boton(".");
-		m_ArrayBoton[3][1] = new Boton("0");
-		m_ArrayBoton[3][2] = new Boton("=");
+		addBoton(3,0, new Boton("."));
+		addBoton(3,1, new Boton("0"));
+		addBoton(3,2,new Boton("="));
 		
+	}
+	public void addBoton(int x, int y, Boton a_boton)
+	{
+		m_ArrayBoton[x][y] = a_boton;
 		anadirBotones();
 	}
 	private void anadirBotones()
@@ -49,7 +45,8 @@ public class GridBotones extends JPanel
 		{
 			for (int j = 0; j < m_ArrayBoton[0].length; j++)
 			{
-				this.add(m_ArrayBoton[i][j]);
+				if(m_ArrayBoton[i][j]!=null)
+					this.add(m_ArrayBoton[i][j]);
 			}
 		}
 	}
