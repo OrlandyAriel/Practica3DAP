@@ -84,7 +84,7 @@ public class FrameCalculadora extends JFrame
 				}
 		);
 	}
-	public void setPantalla(String a_result)
+	private void setPantalla(String a_result)
 	{
 
 		if (m_resultado.equals("0.0"))
