@@ -5,7 +5,10 @@ import ull.patrones.calculadora.operaciones.Division;
 import ull.patrones.calculadora.operaciones.Multiplicacion;
 import ull.patrones.calculadora.operaciones.Resta;
 import ull.patrones.calculadora.operaciones.Suma;
-
+/**
+ * @author Orlandy Ariel Sánchez A.
+ * clase para comprobar que la estrategia funciona correctamente
+ */
 public class Practica3PruebaEstrategia
 {
 	private static Contexto m_contexto;

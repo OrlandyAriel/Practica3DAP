@@ -1,12 +1,15 @@
 package ull.patrones.calculadora.operaciones.componente;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Insets;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
-
-
+/**
+ * @author Orlandy Ariel Sánchez A.
+ *	Clase que hereda de la clase de java JButton, la cual representará los distintos botones
+ */
 @SuppressWarnings("serial")
 public class Boton extends JButton
 {
@@ -20,25 +23,14 @@ public class Boton extends JButton
 	private void initComponent()
 	{	
 		setVisible(true);
-		setBackground(Color.WHITE);
+		//setBackground(Color.WHITE);
+		setFont(new Font("Consolas", Font.BOLD, 23));
 		setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		setMargin(new Insets(5, 5, 5, 5));
 	}
 	public String getSimbolo()
 	{
 		return m_sim;
-	}
-	private double m_valor;
-	public void setValor()
-	{
-		if(m_sim.matches("##.##"))
-			m_valor = Double.parseDouble(m_sim);
-		else 
-			m_valor = 0;
-	}
-	public double getValor()
-	{
-		return m_valor;
 	}
 }
 

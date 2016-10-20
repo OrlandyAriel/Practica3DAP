@@ -1,5 +1,9 @@
 package ull.patrones.calculadora.operaciones;
 
+/**
+ * @author Orlandy Ariel Sánchez A.
+ * Clase destinada a la gestión de la estrategia
+ */
 public class Contexto
 {
 	private IOperacion m_operacion;

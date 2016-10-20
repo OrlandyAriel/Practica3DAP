@@ -12,8 +12,6 @@ import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-
 import ull.patrones.calculadora.operaciones.Contexto;
 import ull.patrones.calculadora.operaciones.Division;
 import ull.patrones.calculadora.operaciones.IOperacion;
@@ -39,7 +37,7 @@ public class FrameCalculadora extends JFrame
 
 	private Contexto m_contexto;
 	private Boton[][] m_ArrayBoton;
-	private Boton m_botonCE;
+	private Boton m_botonC;
 	//CONSTRUCTOR/ES Y MÉTODOS
 	public FrameCalculadora()
 	{
@@ -60,9 +58,8 @@ public class FrameCalculadora extends JFrame
 	private void configPanelBotones()
 	{
 		m_gridBotones = new JPanel();
-		m_gridBotones.setLayout(new GridLayout(4, 5));
+		m_gridBotones.setLayout(new GridLayout(4, 4));
 		m_gridBotones.setVisible(true);
-		m_gridBotones.setBorder(new EmptyBorder(4, 4, 4, 4));
 		configBotonC();
 		configBotonesNumeros();
 		configBotonesOperacion();
@@ -72,10 +69,10 @@ public class FrameCalculadora extends JFrame
 	 */
 	private void configBotonC()
 	{
-		m_botonCE = new Boton("C");
-		m_botonCE.setVisible(true);
-		m_botonCE.setMargin(new Insets(5, 5, 5, 5));
-		m_botonCE.addActionListener(
+		m_botonC = new Boton("C");
+		m_botonC.setVisible(true);
+		m_botonC.setMargin(new Insets(5, 5, 5, 5));
+		m_botonC.addActionListener(
 				new ActionListener()
 				{
 					@Override
@@ -113,7 +110,7 @@ public class FrameCalculadora extends JFrame
 
 		this.add(m_pantalla, BorderLayout.NORTH);
 		this.add(m_gridBotones, BorderLayout.CENTER);
-		this.add(m_botonCE, BorderLayout.SOUTH);
+		this.add(m_botonC, BorderLayout.SOUTH);
 
 	}
 	/**

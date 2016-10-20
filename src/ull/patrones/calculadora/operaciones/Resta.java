@@ -1,8 +1,10 @@
 package ull.patrones.calculadora.operaciones;
-
+/**
+ * @author Orlandy Ariel Sánchez A.
+ * Clase que implementa la Interfaz IOperacion, esta es utilizada para la operación de restar
+ */
 public class Resta implements IOperacion
 {
-
 	@Override
 	public double operacion(double a_num1, double a_num2)
 	{
