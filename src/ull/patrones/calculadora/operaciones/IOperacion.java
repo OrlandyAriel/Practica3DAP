@@ -1,4 +1,4 @@
-package ull.patrones.calculadora.opeciones;
+package ull.patrones.calculadora.operaciones;
 
 public interface IOperacion
 {

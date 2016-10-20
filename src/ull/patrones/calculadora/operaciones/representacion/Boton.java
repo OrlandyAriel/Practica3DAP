@@ -1,6 +1,9 @@
-package ull.patrones.calculadora.opeciones.representacion;
+package ull.patrones.calculadora.operaciones.representacion;
 
+import java.awt.Color;
 import java.awt.Insets;
+
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 
 
@@ -17,7 +20,8 @@ public class Boton extends JButton
 	private void initComponent()
 	{	
 		setVisible(true);
-		//setBackground(Color.WHITE);
+		setBackground(Color.WHITE);
+		setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		setMargin(new Insets(5, 5, 5, 5));
 	}
 	public String getSimbolo()

@@ -1,6 +1,6 @@
 package ull.patrones.calculadora.iu;
 
-import ull.patrones.calculadora.opeciones.IOperacion;
+import ull.patrones.calculadora.operaciones.IOperacion;
 
 public class Contexto
 {

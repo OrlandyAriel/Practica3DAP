@@ -1,4 +1,4 @@
-package ull.patrones.calculadora.opeciones.representacion;
+package ull.patrones.calculadora.operaciones.representacion;
 
 @SuppressWarnings("serial")
 public class RestaButton extends Boton
