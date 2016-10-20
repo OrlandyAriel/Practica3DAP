@@ -14,12 +14,13 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import ull.patrones.calculadora.operaciones.Contexto;
 import ull.patrones.calculadora.operaciones.Division;
 import ull.patrones.calculadora.operaciones.IOperacion;
 import ull.patrones.calculadora.operaciones.Multiplicacion;
 import ull.patrones.calculadora.operaciones.Resta;
 import ull.patrones.calculadora.operaciones.Suma;
-import ull.patrones.calculadora.operaciones.representacion.Boton;
+import ull.patrones.calculadora.operaciones.componente.Boton;
 /**
  * 
  * @author Orlandy Ariel Sánchez A.

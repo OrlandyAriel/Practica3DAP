@@ -1,4 +1,4 @@
-package ull.patrones.calculadora.operaciones.representacion;
+package ull.patrones.calculadora.operaciones.componente;
 
 @SuppressWarnings("serial")
 public class DivisionButton extends Boton 

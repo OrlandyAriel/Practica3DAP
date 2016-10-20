@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.10" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ull.patrones.calculadora.operaciones.representacion.Boton" project="Practica3DAP" 
-    file="/Practica3DAP/src/ull/patrones/calculadora/operaciones/representacion/Boton.java" binary="false" 
+  <class id="1" language="java" name="ull.patrones.calculadora.operaciones.componente.Boton" project="Practica3DAP" 
+    file="/Practica3DAP/src/ull/patrones/calculadora/operaciones/componente/Boton.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="902" y="247"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -20,9 +20,9 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ull.patrones.calculadora.iu.Contexto" project="Practica3DAP" 
-    file="/Practica3DAP/src/ull/patrones/calculadora/iu/Contexto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="807" y="456"/>    
+  <class id="3" language="java" name="ull.patrones.calculadora.operaciones.Contexto" project="Practica3DAP" 
+    file="/Practica3DAP/src/ull/patrones/calculadora/operaciones/Contexto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="824" y="439"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -32,9 +32,11 @@
   <association id="4">    
     <end type="SOURCE" refId="2" navigable="false">      
       <attribute id="5" name="m_contexto">        
-        <position height="18" width="64" x="723" y="372"/>      
+        <position height="18" width="64" x="669" y="355"/>      
       </attribute>      
-      <multiplicity id="6" minimum="0" maximum="1"/>    
+      <multiplicity id="6" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
@@ -44,7 +46,9 @@
       <attribute id="8" name="m_botonCE">        
         <position height="18" width="62" x="708" y="220"/>      
       </attribute>      
-      <multiplicity id="9" minimum="0" maximum="1"/>    
+      <multiplicity id="9" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
@@ -54,7 +58,9 @@
       <attribute id="11" name="m_ArrayBoton">        
         <position height="18" width="78" x="697" y="272"/>      
       </attribute>      
-      <multiplicity id="12" minimum="0" maximum="2147483647"/>    
+      <multiplicity id="12" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

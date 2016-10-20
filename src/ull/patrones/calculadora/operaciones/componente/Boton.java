@@ -1,4 +1,4 @@
-package ull.patrones.calculadora.operaciones.representacion;
+package ull.patrones.calculadora.operaciones.componente;
 
 import java.awt.Color;
 import java.awt.Insets;

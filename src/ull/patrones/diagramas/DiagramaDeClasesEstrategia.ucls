@@ -47,8 +47,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="ull.patrones.calculadora.iu.Contexto" project="Practica3DAP" 
-    file="/Practica3DAP/src/ull/patrones/calculadora/iu/Contexto.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="6" language="java" name="ull.patrones.calculadora.operaciones.Contexto" project="Practica3DAP" 
+    file="/Practica3DAP/src/ull/patrones/calculadora/operaciones/Contexto.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="472" y="106"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
